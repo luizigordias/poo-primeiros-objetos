@@ -20,7 +20,8 @@ O código inicial **compila e executa**, mas ainda imprime marcadores `TODO`. Co
 4. Trabalhe nas branches indicadas, em ordem.
 5. Rode `make test ETAPA=...` antes de cada push.
 6. Consulte **Actions > Validação do capítulo 03** depois do push.
-7. Integre a branch somente quando a validação estiver verde.
+7. Gere `evidencia.md` com `make evidencia` ao concluir a etapa 02.
+8. Integre a branch somente quando a validação estiver verde.
 
 | Etapa | Branch obrigatória | Objetivo | Teste local |
 |---|---|---|---|
@@ -45,6 +46,8 @@ TODO Python
 
 Os testes devem falhar até que cada contrato seja implementado. Não altere `.github/`, `tests/` ou `Makefile` para contornar a validação.
 
+Ao concluir a etapa 02, execute `make evidencia`. O comando valida o código, mede os programas, solicita as respostas da prática e gera o arquivo que deve ser revisado e submetido no Classroom.
+
 ## Estrutura
 
 ```text
@@ -56,6 +59,8 @@ Os testes devem falhar até que cada contrato seja implementado. Não altere `.g
 │   ├── main.py
 │   ├── sensor_nivel.cpp
 │   └── sensor_nivel.py
+├── scripts/
+│   └── gerar_evidencia.sh
 ├── tests/
 ├── Makefile
 ├── CONTRIBUTING.md

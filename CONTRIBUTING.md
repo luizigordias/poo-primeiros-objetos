@@ -15,4 +15,5 @@ Antes do push, execute o teste da etapa. No pull request, inclua:
 - comando executado e resumo da saída;
 - link da execução verde no GitHub Actions;
 - explicação da equivalência conceitual entre C++ e Python;
+- `evidencia.md`, gerado com `make evidencia` ao final da etapa 02;
 - registro em `AI_LOG.md`, quando houver uso de agente.

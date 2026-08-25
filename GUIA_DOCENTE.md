@@ -11,6 +11,7 @@
 
 - Etapa 01: estudantes completam o exemplo explicado no Pages.
 - Etapa 02: estudantes estendem o modelo com unidade e preservam a etapa 01.
+- Ao final, `make evidencia` valida, mede e coleta quatro respostas em `evidencia.md` para submissão no Classroom.
 - Use a primeira falha do CI como leitura formativa, não como punição.
 - Peça que a dupla explique por que as sintaxes diferem, embora classe, objeto, atributo e método sejam conceitos comuns.
 

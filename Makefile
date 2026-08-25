@@ -3,7 +3,7 @@ CXXFLAGS := -std=c++17 -Wall -Wextra -Werror -pedantic -Iinclude
 PYTHON := python3
 BUILD_DIR := build
 
-.PHONY: all build run test clean
+.PHONY: all build run test evidencia clean
 
 all: build
 
@@ -33,6 +33,9 @@ test: build
 		./$(BUILD_DIR)/test_$${numero}_cpp; \
 		PYTHONPATH=src $(PYTHON) -m unittest tests/test_$${numero}_python.py; \
 	done
+
+evidencia:
+	./scripts/gerar_evidencia.sh
 
 clean:
 	rm -rf $(BUILD_DIR)
