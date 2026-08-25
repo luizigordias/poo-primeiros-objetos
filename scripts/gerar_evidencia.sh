@@ -47,10 +47,13 @@ ler_resposta() {
     printf '%s' "${resposta}"
 }
 
-resposta_fluxo="$(ler_resposta "1. Qual diferença você observou entre executar C++ e Python nesta atividade?")"
-resposta_tempo="$(ler_resposta "2. O que as medições com time permitem observar e o que elas não provam?")"
-resposta_compatibilidade="$(ler_resposta "3. Como sua solução preserva a construção antiga com dois argumentos?")"
-resposta_invalido="$(ler_resposta "4. Por que ainda é possível criar um sensor com valor inválido, como -30%?")"
+resposta_modelo="$(ler_resposta "1. Quais são o estado, o comportamento e a responsabilidade de SensorNivel?")"
+resposta_arquivos="$(ler_resposta "2. Qual é o papel de sensor_nivel.hpp, sensor_nivel.cpp e main.cpp?")"
+resposta_construtor="$(ler_resposta "3. O que o construtor faz e como o valor padrão preserva chamadas com dois argumentos?")"
+resposta_linguagens="$(ler_resposta "4. Qual ideia é comum aos valores padrão usados em C++ e Python?")"
+resposta_regressao="$(ler_resposta "5. Por que make test ETAPA=02 também executa os testes da etapa 01?")"
+resposta_execucao="$(ler_resposta "6. Qual diferença você observou entre executar C++ e Python, e o que time não prova?")"
+resposta_invalido="$(ler_resposta "7. Por que o modelo aceita -30% e qual conceito pode impedir esse estado?")"
 
 mapfile -t tempos_cpp <"${arquivo_cpp}"
 mapfile -t tempos_python <"${arquivo_python}"
@@ -77,19 +80,31 @@ printf '%s\n' \
     "" \
     "## Respostas da prática" \
     "" \
-    "### 1. Diferença observada entre os fluxos" \
+    "### 1. Estado, comportamento e responsabilidade" \
     "" \
-    "${resposta_fluxo}" \
+    "${resposta_modelo}" \
     "" \
-    "### 2. Limites da medição" \
+    "### 2. Papel dos arquivos C++" \
     "" \
-    "${resposta_tempo}" \
+    "${resposta_arquivos}" \
     "" \
-    "### 3. Preservação da construção anterior" \
+    "### 3. Construtor e valor padrão" \
     "" \
-    "${resposta_compatibilidade}" \
+    "${resposta_construtor}" \
     "" \
-    "### 4. Estado inválido ainda permitido" \
+    "### 4. Correspondência entre C++ e Python" \
+    "" \
+    "${resposta_linguagens}" \
+    "" \
+    "### 5. Prevenção de regressões" \
+    "" \
+    "${resposta_regressao}" \
+    "" \
+    "### 6. Execução e limites da medição" \
+    "" \
+    "${resposta_execucao}" \
+    "" \
+    "### 7. Estado inválido ainda permitido" \
     "" \
     "${resposta_invalido}" \
     > evidencia.md

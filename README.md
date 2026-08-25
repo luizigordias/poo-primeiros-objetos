@@ -46,7 +46,7 @@ TODO Python
 
 Os testes devem falhar até que cada contrato seja implementado. Não altere `.github/`, `tests/` ou `Makefile` para contornar a validação.
 
-Ao concluir a etapa 02, execute `make evidencia`. O comando valida o código, mede os programas, solicita as respostas da prática e gera o arquivo que deve ser revisado e submetido no Classroom.
+Ao concluir a etapa 02, execute `make evidencia`. O comando valida o código, mede os programas, solicita as sete respostas consolidadas da prática e gera o arquivo que deve ser revisado e submetido no Classroom.
 
 ## Estrutura
 
