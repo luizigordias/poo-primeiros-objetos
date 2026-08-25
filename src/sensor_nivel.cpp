@@ -18,7 +18,7 @@ SensorNivel::SensorNivel(std::string tagInicial, double valorInicial)
 }
 
 std::string SensorNivel::resumo() const {
-    // TODO etapa 01: devolva, por exemplo, "LT-101: 42.5%".
+    // TODO etapa 01: devolva, por exemplo, "LT-101: 42.5".
     // Use formatarValor(valor) para converter o número sem zeros extras.
     (void)formatarValor;
     return "TODO C++";

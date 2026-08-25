@@ -24,7 +24,7 @@ O código inicial **compila e executa**, mas ainda imprime marcadores `TODO`. Co
 
 | Etapa | Branch obrigatória | Objetivo | Teste local |
 |---|---|---|---|
-| 1 | `pratica/01-primeiros-objetos` | completar classe, construção e exibição em C++ e Python | `make test ETAPA=01` |
+| 1 | `pratica/01-primeiros-objetos` | completar classe, construção e resumo de tag e valor | `make test ETAPA=01` |
 | 2 | `pratica/02-extensao-unidade` | acrescentar unidade aos dois modelos sem regressão | `make test ETAPA=02` |
 
 ## Baseline
@@ -33,6 +33,8 @@ O código inicial **compila e executa**, mas ainda imprime marcadores `TODO`. Co
 make build
 make run
 ```
+
+`make build` compila `src/main.cpp` e `src/sensor_nivel.cpp`, usando a declaração de `include/sensor_nivel.hpp`, e produz `build/sensor`. `make run` executa esse binário e depois executa `src/main.py` com o módulo Python disponível em `src`.
 
 Saída inicial intencional:
 

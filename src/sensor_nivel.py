@@ -5,5 +5,5 @@ class SensorNivel:
         self.valor = 0.0
 
     def resumo(self) -> str:
-        # TODO etapa 01: devolva, por exemplo, "LT-101: 42.5%".
+        # TODO etapa 01: devolva, por exemplo, "LT-101: 42.5".
         return "TODO Python"

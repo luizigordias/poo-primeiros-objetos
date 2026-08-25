@@ -9,7 +9,7 @@ class TestPrimeiroObjeto(unittest.TestCase):
 
         self.assertEqual(sensor.tag, "LT-101")
         self.assertEqual(sensor.valor, 42.5)
-        self.assertEqual(sensor.resumo(), "LT-101: 42.5%")
+        self.assertEqual(sensor.resumo(), "LT-101: 42.5")
 
 
 if __name__ == "__main__":
