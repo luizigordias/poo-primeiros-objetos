@@ -7,8 +7,14 @@ class SensorNivel {
 public:
     std::string tag;
     double valor;
+    std::string unidade;
 
-    SensorNivel(std::string tagInicial, double valorInicial);
+    SensorNivel(
+        std::string tagInicial,
+        double valorInicial,
+        std::string unidadeInicial = ""
+    );
+
     std::string resumo() const;
 };
 

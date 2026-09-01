@@ -10,13 +10,22 @@ std::string formatarValor(double valor) {
 }
 }  // namespace
 
-SensorNivel::SensorNivel(std::string tagInicial, double valorInicial)
-    : tag(tagInicial), valor(valorInicial){
-    // TODO etapa 01: inicialize os atributos com os parâmetros recebidos.
+SensorNivel::SensorNivel(
+    std::string tagInicial,
+    double valorInicial,
+    std::string unidadeInicial
+)
+    : tag(tagInicial),
+      valor(valorInicial),
+      unidade(unidadeInicial) {
 }
 
 std::string SensorNivel::resumo() const {
-    // TODO etapa 01: devolva, por exemplo, "LT-101: 42.5".
-    // Use formatarValor(valor) para converter o número sem zeros extras. 
-    return tag + ": " + formatarValor(valor);
+    // TODO: sem unidade, devolver "LT-101: 42.5".
+    // TODO: com unidade, devolver "LT-101: 42.5 %"
+    if (unidade.empty()) {
+        return tag + ": " + formatarValor(valor);
+    }else {
+        return tag + ": " + formatarValor(valor) + " " + unidade;
+    }
 }
